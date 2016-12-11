@@ -8,7 +8,7 @@ USER root
 RUN apt-get update
 RUN apt-get install -y wget libzmq3-dev cmake libmpich-dev mpich && apt-get clean
 
-user main
+USER main
 
 RUN pip install -I --upgrade setuptools
 RUN pip install --upgrade ipywidgets
