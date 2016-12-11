@@ -8,9 +8,9 @@ USER root
 RUN apt-get update
 RUN apt-get install -y wget libzmq3-dev cmake libmpich-dev mpich && apt-get clean
 
-RUN pip install -I --upgrade setuptools
-RUN pip install --upgrade ipywidgets
-RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
+#RUN pip install -I --upgrade setuptools
+#RUN pip install --upgrade ipywidgets
+#RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
 
 USER main
 
