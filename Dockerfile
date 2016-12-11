@@ -11,7 +11,7 @@ RUN apt-get install -y wget libzmq3-dev cmake libmpich-dev mpich && apt-get clea
 user main
 
 RUN pip install -I --upgrade setuptools
-#RUN pip install --upgrade ipywidgets
+RUN pip install --upgrade ipywidgets
 #RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
 
 # Install julia.
