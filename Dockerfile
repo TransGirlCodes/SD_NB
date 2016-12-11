@@ -12,7 +12,7 @@ user main
 
 RUN pip install -I --upgrade setuptools
 RUN pip install --upgrade ipywidgets
-#RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
+RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
 
 # Install julia.
 RUN wget https://julialang.s3.amazonaws.com/bin/linux/x64/0.5/julia-0.5.0-linux-x86_64.tar.gz
